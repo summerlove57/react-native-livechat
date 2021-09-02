@@ -49,8 +49,6 @@ export default class LiveChat extends Component {
 		visitorSDK.on('protocol_upgraded', () => {
 			this.setState({
 				protocol: 'lc3',
-				users: {},
-				messages: [],
 			})
 			this.initCustomerSdk({
 				licenseId: this.props.license,
